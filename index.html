@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="style.css" rel="stylesheet">
+	<link href="jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Quiz by Hammad Saleem 2941412</title>
+</head>
+<body>
+	<h1>THE IRISH QUIZZ</h1>
+	<div class="intro">
+		<h2>Welcome To An Irish Quiz!!</h2>
+		<p>This Quiz will test your general knowledge about Ireland. In order to complete this quiz, you are required to choose the correct options from question provided below Choose the correct answer from each question by selection of dropdown menu, checkboxes, radio buttons or fill-in text boxes. Make sure to answer all questions before pressing the submit button. You will be provided with a feedback once you answer all questions</p>
+	</div>
+	<div id="accordion">
+		<h3>Question 1</h3>
+		<div>
+			<p>Which one of option is the world's second-longest-running show and the longest running talk show in Europe?</p>
+			<form>
+				<input checked name="q1" type="radio" value="1"> Fair City<br>
+				<input name="q1" type="radio" value="2"> Mrs Brown's Boys<br>
+				<input name="q1" type="radio" value="3"> East Enders<br>
+				<input name="q1" type="radio" value="4"> The Late Late Show
+			</form>
+		</div>
+		<h3>Question 2</h3>
+		<div>
+			<p>Which of the following is the longest river in Ireland or Britain?</p>
+			<form>
+				<input id="q2a" name="q21" type="checkbox"> River Suir<br>
+				<input id="q2b" name="q22" type="checkbox"> The River Shannon<br>
+				<input id="q2c" name="q23" type="checkbox"> Munster Blackwater<br>
+				<input id="q2d" name="q24" type="checkbox"> River Liffey
+			</form>
+		</div>
+		<h3>Question 3</h3>
+		<div>
+			<p>Which one of the reptiles from below options does not exsists besides zoos and pet stores in Ireland?</p>1) Lizard<br>
+			2) Crocodile<br>
+			3) Snake<br>
+			4) Turtles<br>
+			<br>
+			Please type the correct answer in the following text box.<br>
+			<br>
+			<input id="q3" name="text" type="text" value="">
+		</div>
+		<h3>Question 4</h3>
+		<div>
+			<p>What province of Ireland includes County Limerick in it?</p><select id="limerick" name="limerick">
+				<option value="munster">
+					Munster
+				</option>
+				<option value="leinster">
+					Leinster
+				</option>
+				<option value="ulster">
+					Ulster
+				</option>
+				<option value="none">
+					None of the above
+				</option>
+			</select>
+		</div>
+		<h3>Question 5</h3>
+		<div>
+			<p>Which month is the driest month of the year in Ireland?</p>
+			<form>
+				<input checked name="q5" type="radio" value="1"> April<br>
+				<input name="q5" type="radio" value="2"> May<br>
+				<input name="q5" type="radio" value="3"> June<br>
+				<input name="q5" type="radio" value="4"> July
+			</form>
+		</div>
+		<h3>Question 6</h3>
+		<div>
+			<p>Which of the following is the oldest Lighthouse in Europe?</p>
+			<form>
+				<input id="q6a" name="q61" type="checkbox"> Tower of Hercules, Corunna, Spain.<br>
+				<input id="q6b" name="q62" type="checkbox"> Bell Rock Lighthouse, Scotland.<br>
+				<input id="q6c" name="q63" type="checkbox"> Kullen Lighthouse, Sweden.<br>
+				<input id="q6d" name="q64" type="checkbox"> Hook Lighthouse, Wexford, Ireland.
+			</form>
+		</div>
+	</div>
+	<form>
+		<input class="button" onclick="clicked()" type="button" value="Submit">
+	</form>
+	<div class="result">
+		<p id="feedback"></p>
+		<div id="hidden">
+			<h3>CONGRATULATIONS!!</h3>
+			<p id="incorrect"></p>
+			<form>
+				<input class="button2" onclick="hideButtonClicked()" type="button" value="Hide Correct Answers">
+			</form>
+			<form>
+				<input class="button2" onclick="showButtonClicked()" type="button" value="Show Correct Answers">
+			</form>
+		</div>
+	</div>
+	<script src="jquery-3.1.1.js">
+	</script> 
+	<script src="accordian.js">
+	</script> 
+	<script src="function.js">
+	</script> 
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.js">
+	</script>
+	<footer>
+		<p>Quizz Designed by Hammad Saleem (2941412)</p>
+		<p><a href="mailto:hammad_saleem@live.com">hammad_saleem@live.com</a></p>
+		<p class="footerText">©Copyright 2017</p>
+	</footer>
+</body>
+</html>
